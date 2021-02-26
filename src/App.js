@@ -6,7 +6,17 @@ function App() {
   const [myName, setMyName] = useState( 'shivam vora', );
 
   const changeName = () => {
-    setMyName( 'shivam vora web developer' );
+
+    let val = myName;
+
+    if ( val === 'shivam vora' ) {
+      setMyName( 'shivam vora web developer' );
+
+    }
+    else {
+      setMyName( 'shivam vora' )
+    }
+
   }
   return (
     <div className="App">
