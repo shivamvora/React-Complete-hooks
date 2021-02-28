@@ -22,15 +22,38 @@ const UseStateArray = () => {
         setMyArray( [] );
     }
 
-    return (
-        <>
-            {
-                myArray.map( ( curElm ) => <h1 key={curElm.id}> id: {curElm.id}    Name: {curElm.myName} & Age: {curElm.age} </h1> )
+    const removeElem = ( id ) => {
+        const myNewArray = myArray.filter( ( curElem ) => {
+            return (
 
-            }
-            <button onClick={clearArray}>clear</button>
-        </>
+                curElem.id !== id
+
+
+
+            );
+
+        } )
+        setMyArray( myNewArray );
+    }
+
+    return ( <>
+
+        {
+            myArray.map( ( curElm ) => {
+                return (
+                    <div>
+                        <h1 key={curElm.id}>Name:{curElm.myName} & Age:{curElm.age}
+                            <button onClick={() => removeElem( curElm.id )}>delete</button>
+                        </h1>
+
+                    </div>
+                );
+            } )
+        }
+        <button onClick={clearArray}>Clear</button>
+    </>
     )
 }
+
 
 export default UseStateArray;
