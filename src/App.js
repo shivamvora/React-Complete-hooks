@@ -3,6 +3,7 @@ import './App.css';
 import UseStateArray from './component/UseStateArray';
 import UseStateObject from './component/UseStateObject';
 import ShortCircuit from './ShortCircuit';
+import BasicForm from './component/forms/basicForm';
 
 
 function App() {
@@ -27,7 +28,8 @@ function App() {
       <button onClick={changeName}>Click me</button> */}
       {/* <UseStateArray /> */}
       {/* <UseStateObject /> */}
-      <ShortCircuit />
+      {/* <ShortCircuit /> */}
+      <BasicForm />
     </div>
   );
 }
