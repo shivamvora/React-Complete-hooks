@@ -27,9 +27,6 @@ const UseStateArray = () => {
             return (
 
                 curElem.id !== id
-
-
-
             );
 
         } )

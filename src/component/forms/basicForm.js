@@ -39,6 +39,7 @@ const BasicForm = () => {
                         return (
                             <div>
                                 <p>{curElem.email}</p>
+
                                 <p>{curElem.password}</p>
                             </div>
                         )
