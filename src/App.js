@@ -5,6 +5,7 @@ import UseStateObject from './component/UseStateObject';
 import ShortCircuit from './ShortCircuit';
 import BasicForm from './component/forms/basicForm';
 import UseEffects from './component/useEffect/UseEffects';
+import UseEffectAPI from './component/useEffect/UseEffectAPI';
 
 
 function App() {
@@ -31,7 +32,9 @@ function App() {
       {/* <UseStateObject /> */}
       {/* <ShortCircuit /> */}
       {/* <BasicForm /> */}
-      <UseEffects />
+      {/* <UseEffects /> */}
+      <UseEffectAPI />
+
     </div>
   );
 }
