@@ -8,6 +8,7 @@ import UseEffects from './component/useEffect/UseEffects';
 import UseEffectAPI from './component/useEffect/UseEffectAPI';
 import Uncontrolled from './component/forms/Uncontrolled';
 import UserReducer from './component/UserReducer';
+import ComA from './component/Usecontext/ComA';
 
 
 function App() {
@@ -37,7 +38,8 @@ function App() {
       {/* <UseEffects /> */}
       {/* <UseEffectAPI /> */}
       {/* <Uncontrolled /> */}
-      <UserReducer />
+      {/* <UserReducer /> */}
+      <ComA />
 
     </div>
   );
