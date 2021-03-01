@@ -7,6 +7,7 @@ import BasicForm from './component/forms/basicForm';
 import UseEffects from './component/useEffect/UseEffects';
 import UseEffectAPI from './component/useEffect/UseEffectAPI';
 import Uncontrolled from './component/forms/Uncontrolled';
+import UserReducer from './component/UserReducer';
 
 
 function App() {
@@ -35,7 +36,8 @@ function App() {
       {/* <BasicForm /> */}
       {/* <UseEffects /> */}
       {/* <UseEffectAPI /> */}
-      <Uncontrolled />
+      {/* <Uncontrolled /> */}
+      <UserReducer />
 
     </div>
   );
