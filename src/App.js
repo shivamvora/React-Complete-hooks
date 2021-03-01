@@ -6,6 +6,7 @@ import ShortCircuit from './ShortCircuit';
 import BasicForm from './component/forms/basicForm';
 import UseEffects from './component/useEffect/UseEffects';
 import UseEffectAPI from './component/useEffect/UseEffectAPI';
+import Uncontrolled from './component/forms/Uncontrolled';
 
 
 function App() {
@@ -33,7 +34,8 @@ function App() {
       {/* <ShortCircuit /> */}
       {/* <BasicForm /> */}
       {/* <UseEffects /> */}
-      <UseEffectAPI />
+      {/* <UseEffectAPI /> */}
+      <Uncontrolled />
 
     </div>
   );
