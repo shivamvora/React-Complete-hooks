@@ -1,19 +1,30 @@
 import React, { useEffect, useState } from 'react'
+import Loading from './Loading';
 
 const UseEffectAPI = () => {
 
     const [users, setUsers] = useState( [] );
+    const [loading, setLoading] = useState( true );
 
     const getUsers = async () => {
-        const response = await fetch( 'https://jsonplaceholder.typicode.com/albums/1/photos' );
+        try {
+            setLoading( false );
+            const response = await fetch( 'https://jsonplaceholder.typicode.com/albums/1/photos' );
 
-        setUsers( await response.json() );
+            setUsers( await response.json() );
 
+        } catch ( error ) {
+            console.log( error );
+        }
     }
 
     useEffect( () => {
         getUsers();
     }, [] );
+
+    if ( loading ) {
+        return <Loading />
+    }
 
     return (
         <>
